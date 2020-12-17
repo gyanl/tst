@@ -4,7 +4,7 @@
 html {
   font-family: "DM Sans", BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #222;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.4;
 }
 
@@ -17,6 +17,10 @@ padding: 20px 0px 18px 0px;
 font-size: 24px;
 border-radius: 100px;
 border: 1px solid #eee;
+}
+
+.bg-pale-green{
+  background-color: #ECFFF6;
 }
 
 .big{
@@ -251,8 +255,9 @@ text-align: center;
   text-decoration: none;
   background: #ffffff;
   border-radius: 10px;
-  margin: 10px 16px;
+  margin: 24px 16px 0px 16px;
   display: inline-block;
+  vertical-align: top;
   width: 28%;
   transition: .15s;
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.02);
@@ -270,10 +275,6 @@ text-align: center;
 .invited{
   text-decoration: none;
   color: #6D768E;
-}
-
-.faq-bg{
-  background-color: #EDF0F5;
 }
 
 .accordion{
@@ -343,15 +344,15 @@ max-width: 45%;
 }
 
 .team-container{
-  max-width: 920px;
   margin: auto;
   margin-bottom: 60px;
 }
 
 .team-member{
-  margin: 48px 16px 0px 16px;
+  margin: 48px 16px 12px 16px;
   display: inline-block;
-  max-width: 40%;
+  vertical-align: top;
+  max-width: 50%;
 }
 
 .team-photo{
@@ -372,17 +373,16 @@ max-width: 45%;
 .name{
   color: #3D4D71;
   padding-top: 16px;
-  font-size: 20px;
+  font-size: 28px;
   padding-bottom: 4px;
 }
 
 .position{
-  font-size: 16px;
+  font-size: 1.2em;
   padding-bottom: 8px;
 }
 
 .description{
-  height: 56px;
   font-size: 14px;
   padding-bottom: 8px;
   color: #6D768E;
@@ -477,7 +477,8 @@ padding-bottom: 40px;
 }
 
 .secondary{
-  font-size: 16px;
+  font-size: 1.1em;
+  line-height: 1.5;
   padding-left: 28px;
   padding-right: 28px;
   color: #6D768E;
