@@ -9,10 +9,20 @@ html {
       letter-spacing: -.01em;
 }
 
+.client-logo{
+  max-width: 200px;
+}
+
+.client-reel{
+      flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
 .cta-button{
   margin-top: 20px;
   margin-bottom: 90px;
-background: #41DDFF;
+ background: #41DDFF;
 width: 280px;
 padding: 20px 0px 18px 0px;
 font-size: 24px;
@@ -737,6 +747,15 @@ textarea {
    ========================================================================== */
 
 @media only screen and (max-width: 768px) {
+
+  .client-logo{
+    max-width: 40%;
+  }
+
+  .client-reel{
+    display: flex;
+    justify-content: space-between;
+  }
 
   .primary{
       font-size: 2.25em;
