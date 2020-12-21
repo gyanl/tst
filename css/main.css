@@ -1,16 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 html {
-  font-family: "DM Sans", BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Raleway", BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #222;
     font-size: 1.1em;
     line-height: 1.4;
       letter-spacing: -.01em;
 }
 
+
+.header-table{
+  display: flex;
+  flex-direction: row;
+}
+
+.header-text{
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.logo{
+  height: 80px;
+  margin-bottom: 28px;
+  animation-name: logo-load;
+  animation-duration: .5s;
+}
+
+@keyframes logo-load {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.header-img{
+  flex-grow: 1;
+  width: 30%;
+  height: auto;
+  align-self:flex-end;
+}
+
 .client-logo{
   max-width: 200px;
+  align-self: center;
 }
 
 .client-reel{
@@ -30,8 +64,8 @@ border-radius: 100px;
 border: 1px solid #eee;
 }
 
-.bg-pale-green{
-  background-color: #ECFFF6;
+.bg-yellow-100{
+  background-color: #FEF8DC;
 }
 
 .big{
@@ -40,8 +74,8 @@ border: 1px solid #eee;
 
 
 .serif{
-  font-family: "Source Serif Pro", "Georgia", serif;
-  font-weight: 900;
+  font-family: "Abhaya Libre", "Georgia", serif;
+  font-weight: 800;
 }
 
 .tst-pink{
@@ -146,9 +180,10 @@ input[type=submit]:hover{
 
 .header{
   height: auto;
-  background: linear-gradient(#EEF8FF 0%, #F0F7FF 100%);
+  background: #1E2142;
   background-size: 100% 99%;
   background-repeat: no-repeat;
+  padding-top: 20px;
 }
 
 .header-bg{
@@ -158,17 +193,6 @@ input[type=submit]:hover{
   background-repeat: no-repeat;
   background-size: 1280px 460px;
   background-position: center bottom;
-}
-
-.logo{
-  max-width: 70vw;
-  padding-top: 100px;
-  background-image: url("../img/logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center 75%;
-  height: 60px;
-  width: 240px;
 }
 
 .padding-appstore{
@@ -206,14 +230,14 @@ input[type=submit]:hover{
 
 .food{
 margin-top: 28px;
-max-width: 600px;
-text-align: center;
+max-width: 400px;
+text-align: left;
 }
 
 .subfood{
   padding-top: 6px;
-  max-width: 500px;
-  text-align: center;
+  max-width: 400px;
+  text-align: left;
 }
 
 .width-800{
@@ -487,6 +511,14 @@ padding-bottom: 40px;
   line-height: 1.2em;
 }
 
+.text-white{
+  color: #fff;
+}
+
+.text-white-75{
+  color: rgba(255, 255, 255, 0.75);
+}
+
 .subtitle{
     text-align: center;
     max-width: 80%;
@@ -497,7 +529,6 @@ padding-bottom: 40px;
   line-height: 1.5;
   padding-left: 28px;
   padding-right: 28px;
-  color: #6D768E;
 }
 
 .maxwidth400{
@@ -527,7 +558,7 @@ padding-bottom: 40px;
 
 .footer{
   padding: 32px 0px 30px 0px;
-  background-color: #0C2C1C;
+  background-color: #1E2142;
   margin-bottom: -20px;
 }
 
@@ -748,6 +779,59 @@ textarea {
 
 @media only screen and (max-width: 768px) {
 
+body{
+  padding-top: 0;
+}
+
+  .logo{
+    height: 80px;
+    margin-bottom: 28px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    margin-top: -12px;
+  }
+
+  @keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .header-table{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-text{
+    padding: 0 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    animation-name: slide-up;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes slide-up {
+    from {opacity: 0; transform: translateY(100px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  .header-img{
+    flex-grow: 1;
+    width: 100vw;
+    align-self: center;
+    padding-top: 20px;
+    margin-bottom: -40px;
+    animation-name: slide-up-later;
+    animation-duration: 2s;
+  }
+
+  @keyframes slide-up-later {
+    0% {opacity: 0; transform: translateY(100px);}
+    25% {opacity: 0; transform: translateY(100px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+
   .client-logo{
     max-width: 40%;
   }
@@ -766,7 +850,15 @@ textarea {
 
   .secondary{
       font-size: 16px;
+      padding-left: 0;
+      padding-right: 0;
   }
+
+.extra{
+  padding: 2% 4% 0 4%;
+  font-size: 1em;
+  line-height: 1.5;
+}
 
   .team-member{
     max-width: 95%;
@@ -892,9 +984,6 @@ max-width: none;
 
 
 @media only screen and (max-width: 540px) {
-  html{
-      background-size: 100% 640px;
-  }
 
   .zoomanim{
     -webkit-transform: scale(1.0);
@@ -940,13 +1029,6 @@ input[type=text]{
   padding-bottom: 100px;
 }
 
-.header-bg{
-  height: auto;
-  background-image: url("../img/trees.png");
-  background-repeat: no-repeat;
-  background-size: 360px 160px;
-}
-
 .graybg{
 padding-bottom: 0px;
 }
@@ -976,9 +1058,6 @@ padding-left: 4%;
 width: 92%;
 }
 
-.logo{
-  padding-top: 80px;
-}
 
 .title{
     max-width: none;
