@@ -343,11 +343,18 @@
 
         // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
         function myFunction() {
-          if (window.pageYOffset-50 > sticky) {
+          if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
           } else {
             header.classList.remove("sticky");
           }
+
+          if((this.oldScroll > this.scrollY) && window.pageYOffset > 200){
+            header.classList.add("hideup");
+          } else{
+            header.classList.remove("hideup");
+          }
+          this.oldScroll = this.scrollY;
         }
 
         function showmenu() {
