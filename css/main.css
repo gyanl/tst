@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 html {
@@ -6,7 +6,6 @@ html {
     color: #222;
     font-size: 1.1em;
     line-height: 1.4;
-      letter-spacing: -.01em;
 }
 
 #menu-btn, #hide-menu-btn{
@@ -14,6 +13,10 @@ html {
   font-size: 20px;
 }
 
+.hideup{
+  transition: .25s;
+  transform: translateY(-100px);
+}
 
 /* Style the header with a grey background and some padding */
 .header {
@@ -142,8 +145,8 @@ border: 1px solid #eee;
 
 
 .serif{
-  font-family: "Abhaya Libre", "Georgia", serif;
-  font-weight: 800;
+  font-family: "Abril Fatface", "Georgia", serif;
+  font-weight: 400;
 }
 
 .tst-pink{
@@ -859,12 +862,6 @@ textarea {
     #menu-btn{
       display: inline-block;
     }
-
-body{
-  padding-top: 40px;
-}
-
-
 
   @keyframes fade-in {
     from {opacity: 0;}
