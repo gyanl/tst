@@ -41,14 +41,24 @@
         <script src="https://kit.fontawesome.com/734cf6bfa4.js" crossorigin="anonymous"></script>
 
     </head>
-    <body>
-      <div class="header">
-          <center>
+    <body id="home">
+
+      <div class="header" id="myheader">
+  <a href="#default" class="logo"><img class="logo" src="img/logo.png"></img></a>
+  <div class="header-right">
+    <a id="btn-home" onclick="(activate(this.id))" class="active" href="#home">Home</a>
+    <a id="btn-services" onclick="(activate(this.id))" href="#services">Services</a>
+    <a id="btn-story" onclick="(activate(this.id))" href="#story">Story</a>
+    <a id="btn-about" onclick="(activate(this.id))" href="#team">Team</a>
+    <a id="btn-clients" onclick="(activate(this.id))" href="#clients">Clients</a>
+  </div>
+</div>
+
 
             <div class="header-table">
               <div class="header-text">
 
-                <div class="primary food serif text-white">                <a href="index.html"><img class="logo" src="img/logo.png"></img></a><br>Let us add flavour to your brand story.</div>
+                <div class="primary food serif text-white">                <br>Let us add flavour to your brand story.</div>
                 <div class="secondary subfood text-white-75">A collective experience that exceeds a decade, The Social Tadka brings a young and spicy twist to the world of marketing. Having grown up with social media, our generation boasts of a unique insight into the field of digital marketing. With a diverse clientele ranging from art and photography to fashion and education, we are well versed in handling client requirements.</div>
               </div>
               <img class="header-img" src="img/header-img.png" alt="">
@@ -57,8 +67,6 @@
               Your call to action
             </div> -->
             <div class="space"></div>
-          </center>
-      </div>
 
       <!-- <div class="how-works">
       <div class="primary title stay-left serif">How it works</div>
@@ -105,7 +113,7 @@
     </div>
   </div> -->
 
-  <div class="how-works">
+  <div class="how-works" id="services">
   <div class="primary title stay-left serif">Our Services</div>
 
 
@@ -152,7 +160,7 @@
   </div>
 
 
-<div class="bg-yellow-100">
+<div class="bg-yellow-100" id="story">
   <div class="how-works">
   <div class="primary title stay-left serif">Our Story</div>
   <div class="cols-2">
@@ -222,7 +230,7 @@
 </div>
 --->
 
-<div class="team-container">
+<div class="team-container" id="team">
   <center>
   <div class="primary title center serif">Meet the Team</div>
 
@@ -243,7 +251,7 @@
 </div>
 
 
-  <div class="how-works">
+  <div class="how-works" id="clients">
   <div class="primary title stay-left serif">Our Clients</div>
   <div class="client-reel">
 
@@ -309,41 +317,36 @@
 </center>
 </div>
 
-
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-        <!--
-        Add your site or application content here
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        -->
-
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID.
         <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>-->
-        <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
 
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight){
-              panel.style.maxHeight = null;
-            } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            }
-          });
+        function activate(section) {
+            document.getElementById('btn-home').classList.remove("active");
+            document.getElementById('btn-services').classList.remove("active");
+            document.getElementById('btn-story').classList.remove("active");
+            document.getElementById('btn-about').classList.remove("active");
+            document.getElementById('btn-clients').classList.remove("active");
+
+            document.getElementById(section).classList.add("active");
         }
+
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("myheader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset-50 > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+
         </script>
     </body>
 </html>
