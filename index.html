@@ -44,13 +44,16 @@
     <body id="home">
 
       <div class="header" id="myheader">
-  <a href="#default" class="logo"><img class="logo" src="img/logo.png"></img></a>
+  <a href="#default" id="logo" class="logo"><img class="logo" src="img/logo.png"></img></a>
   <div class="header-right">
     <a id="btn-home" onclick="(activate(this.id))" class="active" href="#home">Home</a>
     <a id="btn-services" onclick="(activate(this.id))" href="#services">Services</a>
     <a id="btn-story" onclick="(activate(this.id))" href="#story">Story</a>
     <a id="btn-about" onclick="(activate(this.id))" href="#team">Team</a>
     <a id="btn-clients" onclick="(activate(this.id))" href="#clients">Clients</a>
+    <a id="menu-btn" onclick="(showmenu())"><i class="fas fa-bars"></i></a>
+    <a id="hide-menu-btn" onclick="(hidemenu())"><i class="fas fa-times-circle"></i></a>
+
   </div>
 </div>
 
@@ -345,6 +348,28 @@
           } else {
             header.classList.remove("sticky");
           }
+        }
+
+        function showmenu() {
+          document.getElementById('logo').style.display="none";
+          document.getElementById('btn-home').style.display="inline-block";
+          document.getElementById('btn-services').style.display="inline-block";
+          document.getElementById('btn-story').style.display="inline-block";
+          document.getElementById('btn-about').style.display="inline-block";
+          document.getElementById('btn-clients').style.display="inline-block";
+          document.getElementById('menu-btn').style.display="none";
+          document.getElementById('hide-menu-btn').style.display="inline-block";
+        }
+
+        function hidemenu() {
+          document.getElementById('logo').style.display="inline-block";
+          document.getElementById('btn-home').style.display="none";
+          document.getElementById('btn-services').style.display="none";
+          document.getElementById('btn-story').style.display="none";
+          document.getElementById('btn-about').style.display="none";
+          document.getElementById('btn-clients').style.display="none";
+          document.getElementById('menu-btn').style.display="inline-block";
+          document.getElementById('hide-menu-btn').style.display="none";
         }
 
         </script>
