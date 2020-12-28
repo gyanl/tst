@@ -8,6 +8,14 @@ html {
     line-height: 1.4;
 }
 
+.text-shadow-yellow{
+    text-shadow: -2px 2px #FEE252;
+}
+
+.text-shadow-pink{
+    text-shadow: -2px 2px #E7415C;
+}
+
 #menu-btn, #hide-menu-btn{
   display: none;
   font-size: 20px;
@@ -163,7 +171,7 @@ border: 1px solid #eee;
   column-gap: 40px;
 }
 
-input[type=text]{
+input[type=tel]{
   margin: 3px;
   height: 40px;
   padding: 8px 20px 8px 20px;
