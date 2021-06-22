@@ -123,13 +123,13 @@ html {
 
 .client-logo{
   max-width: 200px;
-  align-self: center;
+  padding: 30px;
 }
 
 .client-reel{
-      flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
 .cta-button{
@@ -454,21 +454,9 @@ max-width: 45%;
   margin-bottom: -20px;
 }
 
-.archit:hover{
-  transform:matrix(1.18,-0.21,0.21,1.18,0,0);
-  -ms-transform:matrix(1.18,-0.21,0.21,1.18,0,0);
-  -webkit-transform:matrix(1.18,-0.21,0.21,1.18,0,0);
-}
-
-.rabail:hover{
-  transform:matrix(1.18,0.21,-0.21,1.18,0,0);
-  -ms-transform:matrix(1.18,0.21,-0.21,1.18,0,0);
-  -webkit-transform:matrix(1.18,0.21,-0.21,1.18,0,0);
-}
-
 .name{
   color: #3D4D71;
-  padding-top: 16px;
+  padding-top: 36px;
   font-size: 28px;
   padding-bottom: 4px;
 }
@@ -920,6 +908,7 @@ textarea {
   .client-reel{
     display: flex;
     justify-content: space-between;
+    width: auto;
   }
 
   .primary{
