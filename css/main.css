@@ -130,6 +130,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
+  justify-content: space-around;
 }
 
 .cta-button{
@@ -903,6 +904,7 @@ textarea {
 
   .client-logo{
     max-width: 40%;
+    padding: 0;
   }
 
   .client-reel{
