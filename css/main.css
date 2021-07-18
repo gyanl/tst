@@ -8,6 +8,10 @@ html {
     line-height: 1.4;
 }
 
+.text-shadow-black{
+    text-shadow: -2px 2px #000000;
+}
+
 .text-shadow-yellow{
     text-shadow: -2px 2px #FEE252;
 }
@@ -28,7 +32,7 @@ html {
 
 /* Style the header with a grey background and some padding */
 .header {
-  background: #333;
+  background: #000;
   overflow: hidden;
   padding: 0px 10px 4px 20px;
   transition: .5s;
@@ -89,7 +93,7 @@ html {
 
 
 .header-table{
-  background: #333;
+  background: #000;
   display: flex;
   flex-direction: row;
 }
@@ -142,6 +146,10 @@ padding: 20px 0px 18px 0px;
 font-size: 24px;
 border-radius: 100px;
 border: 1px solid #eee;
+}
+
+.bg-yellow-400{
+  background-color: #FADE56;
 }
 
 .bg-yellow-100{
@@ -558,6 +566,15 @@ background-color: #EDF0F5;
 .text-white{
   color: #fff;
 }
+
+.text-yellow{
+  color: #F8DF30;
+}
+
+.text-pink{
+  color: #EC4674;
+}
+
 
 .text-white-75{
   color: rgba(255, 255, 255, 0.75);
