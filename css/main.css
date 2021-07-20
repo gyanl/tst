@@ -12,6 +12,10 @@ html {
     text-shadow: -2px 2px #000000;
 }
 
+.text-shadow-blue{
+    text-shadow: -2px 2px #3D4D71;
+}
+
 .text-shadow-yellow{
     text-shadow: -2px 2px #FEE252;
 }
@@ -381,12 +385,12 @@ text-align: left;
   text-decoration: none;
   margin-bottom: -10px;
   font-size: 24px;
-  color: #3D4D71;
+  color: #5C5C5C;
 }
 
 .invited{
   text-decoration: none;
-  color: #6D768E;
+  color: #000000;
 }
 
 .accordion{
@@ -398,7 +402,7 @@ text-align: left;
   background-color: #FBFBFD;
   font-weight: 600;
   font-size: 16px;
-  color: #3D4D71;
+  color: #5C5C5C;
   text-align: left;
   padding: 16px 20px 16px 48px;
   margin-top: 16px;
@@ -423,7 +427,7 @@ text-align: left;
   border-radius: 0px 0px 8px 8px;
   padding: 0 24px 0px 48px;
   background-color: white;
-  color: #6D768E;
+  color: #000000;
   margin-top: -2px;
   max-height: 0;
   overflow: hidden;
@@ -463,7 +467,7 @@ max-width: 45%;
 }
 
 .name{
-  color: #3D4D71;
+  color: #5C5C5C;
   padding-top: 36px;
   font-size: 28px;
   padding-bottom: 4px;
@@ -478,13 +482,13 @@ max-width: 45%;
 .description{
   font-size: 14px;
   padding-bottom: 8px;
-  color: #6D768E;
+  color: #000000;
 }
 
 .location{
   font-size: 14px;
   padding-bottom: 2px;
-  color: #6D768E;
+  color: #000000;
 }
 
 .size13{
@@ -558,7 +562,7 @@ background-color: #EDF0F5;
 .primary{
   padding-left: 28px;
   padding-right: 28px;
-  color: #3D4D71;
+  color: #5C5C5C;
   font-size: 32px;
   line-height: 1.2em;
 }
