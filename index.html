@@ -51,6 +51,7 @@
     <a id="btn-story" onclick="(activate(this.id))" href="#story">Story</a>
     <a id="btn-about" onclick="(activate(this.id))" href="#team">Team</a>
     <a id="btn-clients" onclick="(activate(this.id))" href="#clients">Clients</a>
+    <a id="btn-contact" onclick="(activate(this.id))" href="#contact">Contact</a>
     <a id="menu-btn" onclick="(showmenu())"><i class="fas fa-bars"></i></a>
     <a id="hide-menu-btn" onclick="(hidemenu())"><i class="fas fa-times-circle"></i></a>
 
@@ -108,7 +109,7 @@
 
     <div class="card1of2">
       <img class="news-img" src="img/Cursor.png">
-      <p class="smallcaps serif">Search Engine Optimisation and Ads</p>
+      <p class="smallcaps serif">Facebook and Instagram Ads</p>
       <p class="invited">Organic reach? That's an oxymoron and we're here to let you know we're not those morons. 10% of all marketing budgets are now redirected to digital marketing ads. So keep those purse strings loose, we need to get you your money's worth.
     </div>
 
@@ -192,7 +193,7 @@
 </center>
 
 
-<div class="newsletter graybg">
+<div class="newsletter graybg" id="contact">
   <center>
     <div class="primary title center serif text-shadow-yellow">Get in touch</div>
     <p class="subtitle secondary">Email us your queries at <a href="mailto:hi@thesocialtadka.com">hi@thesocialtadka.com</a>.
@@ -253,6 +254,7 @@
             document.getElementById('btn-story').classList.remove("active");
             document.getElementById('btn-about').classList.remove("active");
             document.getElementById('btn-clients').classList.remove("active");
+            document.getElementById('btn-contact').classList.remove("active");
 
             document.getElementById(section).classList.add("active");
         }
