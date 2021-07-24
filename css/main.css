@@ -871,7 +871,7 @@ textarea {
       display: inline-block;
     }
 
-    #btn-home, #btn-services, #btn-story, #btn-about, #btn-clients{
+    #btn-home, #btn-services, #btn-story, #btn-about, #btn-clients, #btn-contact{
       display: none;
     }
 
